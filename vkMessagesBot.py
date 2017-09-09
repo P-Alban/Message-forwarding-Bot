@@ -51,7 +51,7 @@ def sendMessageInTelegram(message, session, is_media = False):
 def getMaxPhotoSize(photo):
 	# get max photo size
 	size = max([int(x.split('_')[1]) for x in photo.keys() if 'photo' in x])
-	return list(filter(lambda x: str(size) in x, photo))[0]
+	return list(filter(lambda x: str(size) in x, photo))[0] 
 
 def main():
 	while True:
